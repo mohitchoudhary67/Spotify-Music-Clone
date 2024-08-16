@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Baloo+Bhaijaan+2:wght@600;800&family=Baloo+Da+2:wght@700&family=Be+Vietnam+Pro:ital,wght@0,900;1,500;1,800;1,900&family=Bree+Serif&family=DM+Serif+Text:ital@1&family=Kaushan+Script&family=Lora&family=Nanum+Myeongjo:wght@700;800&family=Poppins:ital,wght@0,800;1,100;1,200;1,700&family=Source+Sans+Pro:ital,wght@0,600;0,700;1,400;1,600&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 35px;
+    color: white;
+    background-color: black;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 37px;
+    border-radius: 26px;
+    margin-right: 7px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container {
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: block;
+    margin: 15px auto;
+    width: 73%;
+    border-radius: 12px;
+    padding: 30px;
+    background: url("bg\ img\ song\ 2.jpg") no-repeat center center/cover;
+}
+
+.container h1 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container .mainContainer {
+    margin-top: 31px;
+}
+
+.bottom {
+    position: sticky;
+    height: 70px;
+    background-color: black;
+    /* bottom: 0px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.icons {
+    margin: 5px;
+
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.songImg img {
+    width: 43px;
+    position: absolute;
+    left: 10vw;
+    bottom: 22px;
+
+}
+
+.songImg img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.songImg span {
+    position: absolute;
+    left: 14vw;
+    bottom: 17px;
+}
+
+.songItem {
+    height: 45px;
+    background-color: white;
+    color: black;
+    width: 47%;
+    margin: 9px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 22px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.songItem img {
+    width: 36px;
+    border-radius: 34px;
+    /* margin: 0 23px; */
+
+
+}
+
+.songListItemContainer .timestemp i {
+    cursor: pointer;
+}
+
+.songListItemContainer {
+    margin-top: 34px;
+}
+
+
+@media only screen and (max-width:1080px) {
+    .songItem #songCover {
+        width: 1.99rem;
+    }
+
+    .songItem .songName {
+        font-size: 0.8rem;
+
+    }
+
+    .songItem .timestemp {
+        font-size: 0.8rem;
+
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .songItem #songCover {
+        width: 1.40rem;
+    }
+
+    .songItem .songName {
+        font-size: 0.50rem;
+    }
+
+    .songItem .timestemp {
+        font-size: 0.55rem;
+
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .container h1 {
+        font-size: 1.2rem;
+    }
+
+    .songItem #songCover {
+        display: 1.;
+    }
+
+    .songItem .songName {
+        font-size: 0.45rem;
+    }
+
+    .songItem .timestemp {
+        font-size: 0.55rem;
+
+    }
+
+    .bottom .songImg #masterSongName {
+        position: absolute;
+        bottom: 2px;
+        left: 25px;
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .container h1 {
+        font-size: 0.95rem;
+    }
+
+    .songItem #songCover {
+        display: none;
+    }
+
+    .songItem .songName {
+        font-size: 0.40rem;
+    }
+
+    .songItem .timestemp {
+        font-size: 0.55rem;
+
+    }
+
+    .bottom .songImg #masterSongName {
+        position: absolute;
+        bottom: 2px;
+        left: 25px;
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (max-width:360px) {
+    .container h1 {
+        font-size: 0.83rem;
+    }
+
+    .songItem #songCover {
+        display: none;
+    }
+
+    .songItem .songName {
+        font-size: 0.35rem;
+    }
+
+    .songItem .timestemp {
+        font-size: 0.55rem;
+
+    }
+
+    .bottom .songImg #masterSongName {
+        position: absolute;
+        bottom: 4px;
+        left: 18px;
+        font-size: 0.4rem;
+    }
+}
+@media only screen and (max-width:325px) {
+    .container h1 {
+        font-size: 0.75rem;
+    }
+
+    .songItem #songCover {
+        display: none;
+    }
+
+    .songItem .songName {
+        font-size: 0.28rem;
+    }
+
+    .songItem .timestemp {
+        font-size: 0.55rem;
+
+    }
+
+    .bottom .songImg #masterSongName {
+        position: absolute;
+        bottom: 4px;
+        left: 10px;
+        font-size: 0.4rem;
+    }
+}
